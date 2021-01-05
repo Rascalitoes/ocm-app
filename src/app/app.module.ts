@@ -23,6 +23,7 @@ import { PoiEditorPageModule } from './pages/poi-editor/poi-editor.module';
 
 import { AboutPageModule } from './pages/about/about.module';
 import { LayerEditorPageModule } from './pages/layer-editor/layer-editor.module';
+import { HelpPageModule } from './pages/help/help.module';
 
 export function tokenGetter() {
   return localStorage.getItem('access_token');
@@ -74,7 +75,8 @@ export class AppMissingTranslationHandler implements MissingTranslationHandler {
     ProfileModule,
     SettingsModule,
     AboutPageModule,
-    LayerEditorPageModule
+    LayerEditorPageModule,
+    HelpPageModule
   ],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }

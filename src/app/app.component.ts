@@ -14,6 +14,7 @@ import { Analytics } from "./services/Analytics";
 import { GeoLatLng } from "./model/AppModels";
 import { Utils } from "./core/Utils";
 import { AboutPage } from "./pages/about/about.page";
+import { HelpPage } from "./pages/help/help.page";
 import { LayerEditorPage } from "./pages/layer-editor/layer-editor.page";
 import {
   Plugins,
@@ -295,6 +296,22 @@ export class AppComponent {
     });
 
     await modal.present();
+  }
+
+  async help() {
+    this.mapping.unfocusMap();
+
+    const modal = await this.modalController.create({
+      component: HelpPage
+    });
+
+    modal.onDidDismiss().then(data => {
+      // focus map again..
+      this.mapping.focusMap();
+    });
+
+    await modal.present();
+
   }
 
 }
