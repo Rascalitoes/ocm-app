@@ -41,3 +41,4 @@ docs/
 android/app/google-services.json
 
 package-lock.json
+src/app/app-routing.module.ts

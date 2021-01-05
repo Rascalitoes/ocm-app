@@ -10,7 +10,7 @@ export const environment = {
   production: false,
   analyticsId: '',
   googleMapsKey: '',
-  mapBoxToken: '',
+  mapBoxToken: 'pk.eyJ1IjoicmFzY2FsaXRvZXMiLCJhIjoiY2tpZzI1ZXBvMjkwbzJybnZ0Z3p4NjhhdCJ9.CY_A6yAzJk39akXqsGanSw',
   mapKitToken: '',
   enableStaticMaps: false,
   defaultMapProvider: 4, // 1: GM native 4: MapBox // 5:MappingAPI.MAPKIT_JS  //6: mapbox GL with Maptiler,
